@@ -6,10 +6,7 @@ on:
 jobs:
   trigger_workflow:
     name: Trigger Workflow
-    runs-on: ubuntu-latest
-    steps:
-      - name: Call Work Flow
-        id: call_workflow_step
-        uses: BSaugata-OpenSource/what-is-golang/.github/workflows/build-and-publish.yaml@main
-        with:
-          imagetag: ${{ github.sha }}
+    uses: BSaugata-OpenSource/what-is-golang/.github/workflows/build-and-publish.yaml@main
+    with:
+      imagetag: ${{ github.sha }}
+        
