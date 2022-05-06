@@ -9,4 +9,5 @@ jobs:
     uses: BSaugata-OpenSource/what-is-golang/.github/workflows/build-and-publish.yaml@main
     with:
       imagetag: ${{ github.sha }}
+      repo-token: ${{ secrets.GITHUB_TOKEN }}
         
