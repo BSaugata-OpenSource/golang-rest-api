@@ -4,8 +4,8 @@ on:
   workflow_dispatch:
 
 jobs:
-  trigger_workflow:
-    name: Trigger Workflow
+  trigger_what_is_golang:
+    name: Trigger What Is Golang
     uses: BSaugata-OpenSource/what-is-golang/.github/workflows/build-and-publish.yaml@main
     with:
       imagetag: ${{ github.sha }}
