@@ -1,4 +1,4 @@
-name: Build and Publish Go Rest Api
+name: Build and Publish Golang Rest Api
 
 on:
   workflow_dispatch:
